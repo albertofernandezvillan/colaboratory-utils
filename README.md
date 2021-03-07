@@ -13,7 +13,23 @@ Click on a code cell and paste:
 Then `alt+enter` or `shift+enter` to execute. 
 
 ## Examples
-TODO....
+
+```
+import colaboratory_utils as colab_utils
+ 
+# Download an execute a file
+colab_utils.download_and_execute_file(fname, url, params= "", execute=True, show_content=True)
+ 
+# Take image from webcam:
+img = colab_utils.webcam2numpy()
+
+# Show image:
+colab_utils.imshow(img)
+ 
+# Take video from webcam:
+vid = colab_utils.videoGrabber(showVideo=False)
+image_np = np.array(vid(0))
+```
 
 
 
