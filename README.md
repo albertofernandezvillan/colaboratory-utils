@@ -2,7 +2,7 @@
 
 Some useful (or not so much) Python stuff for Google Colab notebooks. 
 Most of this stuff is taken from [this repository](https://github.com/ricardodeazambuja/colab_utils).
-These collection of utilities in mainly used in [this repository](https://github.com/albertofernandezvillan/computer-vision-and-deep-learning-course).
+These collection of utilities in mainly used in [this repository](https://github.com/albertofernandezvillan/computer-vision-and-deep-learning-course) (just another computer vision and deep learning course).
 
 
 ## How to install it:
