@@ -35,8 +35,30 @@ from google.colab.output import eval_js
 from PIL import Image, ImageDraw
 import numpy as np
 from scipy.io.wavfile import read as wav_read
+from matplotlib import pyplot as plt
+import cv2
 # import ffmpeg
 
+
+
+def show_img_plt(img, is_color=True, title="", show_axis=True, n_rows=1, n_cols=1, pos=1):
+    """Shows an image using matplotlib capabilities"""
+
+    if is_color:
+      # Convert BGR image to RGB
+      img_rgb = img[:, :, ::-1]
+    else:
+      # We convert the image from gray to BGR
+      img_rgb = cv2.cvtColor(img, cv2.COLOR_GRAY2BGR)
+
+    ax = plt.subplot(n_rows, n_cols, pos)
+    plt.imshow(img_rgb)
+    plt.title(title)
+    if show_axis is False:
+      plt.axis('off')
+
+      
+      
 # https://stackoverflow.com/questions/14409167/how-to-pass-a-variable-to-magic-%C2%B4run%C2%B4-function-in-ipython
 def download_and_execute_file(fname, url, params="", execute=True, show_content=False):
   # Download and write the file:
