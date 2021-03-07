@@ -1,9 +1,9 @@
 # colaboratory_utils
 
 Some useful (or not so much) Python stuff for Google Colab notebooks. 
-Most of this stuff is taken from this repository: https://github.com/ricardodeazambuja/colab_utils
+Most of this stuff is taken from [this repository](https://github.com/ricardodeazambuja/colab_utils).
+These collection of utilities in mainly used in [this repository](https://github.com/albertofernandezvillan/computer-vision-and-deep-learning-course).
 
-This stuff is mainly used in this repository: https://github.com/albertofernandezvillan/computer-vision-and-deep-learning-course
 
 ## How to install it:
 Click on a code cell and paste:
@@ -13,6 +13,8 @@ Click on a code cell and paste:
 Then `alt+enter` or `shift+enter` to execute. 
 
 ## Examples
+
+Check [colaboratory_utils.ipynb](https://github.com/albertofernandezvillan/colaboratory-utils/blob/main/colaboratory_utils.ipynb) in order to see how this stuff can be used.
 
 ```
 import colaboratory_utils as colab_utils
