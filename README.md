@@ -8,7 +8,7 @@ This stuff is mainly used in this repository: https://github.com/albertofernande
 ## How to install it:
 Click on a code cell and paste:
 ```
-!pip install git+git://github.com/albertofernandezvillan/colaboratory_utils.git
+!pip install git+git://github.com/albertofernandezvillan/colaboratory-utils.git
 ```
 Then `alt+enter` or `shift+enter` to execute. 
 
