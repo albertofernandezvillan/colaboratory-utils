@@ -16,21 +16,30 @@ Then `alt+enter` or `shift+enter` to execute.
 
 ```
 import colaboratory_utils as colab_utils
- 
-# Download an execute a file:
-fname = 'circle_polygon.py'
-url = 'https://raw.githubusercontent.com/PacktPublishing/Mastering-OpenCV-4-with-Python/master/Chapter04/02-exercices/circle_polygon.py'
+
+# 1. Show multiple image figures:
+# Create the dimensions of the figure and set title:
+plt.figure(figsize=(12, 7))
+plt.suptitle("Testing visualization", fontsize=14, fontweight='bold')
+
+colab_utils.show_img_plt(img, title='sample', n_rows=2, n_cols=3, pos=1)
+# .....
+
+# Show the created image:
+plt.show()
+
+# 2. Download an execute a file
 colab_utils.download_and_execute_file(fname, url, params= "", execute=True, show_content=True)
- 
-# Take image from webcam:
+
+# 3. Take image from webcam:
 img = colab_utils.webcam2numpy()
 
-# Show image:
-colab_utils.imshow(img)
- 
-# Take video from webcam:
+# 4. Take video from webcam:
 vid = colab_utils.videoGrabber(showVideo=False)
 image_np = np.array(vid(0))
+
+# 5. Show image (simple):
+colab_utils.imshow(img)
 ```
 
 
