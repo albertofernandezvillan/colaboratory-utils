@@ -78,6 +78,8 @@ def download_and_execute_file(fname, url, params="", execute=True, show_content=
     ipy = get_ipython()
     ipy.magic(execution)
 
+    
+    
 def webcam2numpy(quality=0.8, size=(800,600)):
   """Saves images from your webcam into a numpy array.
 
