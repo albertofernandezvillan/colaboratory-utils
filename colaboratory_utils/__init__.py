@@ -37,6 +37,24 @@ import numpy as np
 from scipy.io.wavfile import read as wav_read
 # import ffmpeg
 
+# https://stackoverflow.com/questions/14409167/how-to-pass-a-variable-to-magic-%C2%B4run%C2%B4-function-in-ipython
+def download_and_execute_file(fname, url, params="", execute=True, show_content=False):
+  # Download and write the file:
+  r = requests.get(url)
+  open(fname , 'wb').write(r.content)
+
+  # Show the content of the script if required:
+  if show_content:
+    print("\n")
+    with open(fname,'r') as testwritefile:
+      print(testwritefile.read())
+    print("\n")
+
+  # Execute the script if required:
+  if execute:    
+    execution = "run " + fname + " " + params
+    ipy = get_ipython()
+    ipy.magic(execution)
 
 def webcam2numpy(quality=0.8, size=(800,600)):
   """Saves images from your webcam into a numpy array.
