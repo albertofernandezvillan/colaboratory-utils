@@ -17,7 +17,9 @@ Then `alt+enter` or `shift+enter` to execute.
 ```
 import colaboratory_utils as colab_utils
  
-# Download an execute a file
+# Download an execute a file:
+fname = 'circle_polygon.py'
+url = 'https://raw.githubusercontent.com/PacktPublishing/Mastering-OpenCV-4-with-Python/master/Chapter04/02-exercices/circle_polygon.py'
 colab_utils.download_and_execute_file(fname, url, params= "", execute=True, show_content=True)
  
 # Take image from webcam:
