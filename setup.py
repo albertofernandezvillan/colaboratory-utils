@@ -3,7 +3,7 @@ setup(
     name="colaboratory_utils",
     version="0.1",
     packages=['colaboratory_utils'],
-    install_requires=['scipy', 'pillow', 'numpy'],
+    install_requires=['scipy', 'pillow', 'numpy', 'opencv-python', 'matplotlib'],
 
     # metadata to display on PyPI
     keywords="Notebook colab colaboratory google Numpy PIL OpenCV",
